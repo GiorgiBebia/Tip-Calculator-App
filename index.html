@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon-32x32.png" sizes="32x32">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Tip Calculator App</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/logo.svg" alt="logo">
+    </header>
+    <main>
+        <div class="div1">
+            <h2 class="bill">Bill</h2>
+            <input class="bill-number" type="number" value="0" min="0" />
+            <img class="dollar" src="img/icon-dollar.svg" alt="icon">
+            <h2 class="tips">Select Tip %</h2>
+            <div class="tip-div">
+                <button class="tip5">
+                    <h2 class="h2-tip">5%</h2>
+                </button>
+                <button class="tip10">
+                    <h2 class="h2-tip">10%</h2>
+                </button>
+                <button class="tip15">
+                    <h2 class="h2-tip">15%</h2>
+                </button>
+                <button class="tip25">
+                    <h2 class="h2-tip">25%</h2>
+                </button>
+                <button class="tip50">
+                    <h2 class="h2-tip">50%</h2>
+                </button>
+                <button class="tipcustom"><input class="tip-number" type="number" type="number" value=""
+                        placeholder="Custom">
+                </button>
+            </div>
+            <div class="number-people-zero">
+                <h2 class="number-people">Number of People</h2>
+                <h2 class="zero">Can’t be zero</h2>
+            </div>
+            <input class="input-number-people" type="number" min="0" value="0">
+            <img class="person" src="img/icon-person.svg" alt="icon">
+        </div>
+        <div class="result">
+            <div class="tip-amount">
+                <div>
+                    <h2 class="split-tip">Tip Amount</h2>
+                    <h3 class="split-tip-person">/ person</h3>
+                </div>
+                <h2 class="split-tip-result">$0.00</h2>
+            </div>
+            <div class="total-amount">
+                <div>
+                    <h2 class="split-total">Total</h2>
+                    <h3 class="split-total-person">/ person</h3>
+                </div>
+                <h2 class="split-total-result">$0.00</h2>
+            </div>
+            <button class="reset">
+                <h2 class="reset-button">RESET</h2>
+            </button>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
